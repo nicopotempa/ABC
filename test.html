@@ -1,5 +1,5 @@
 <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
-<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.5/aframe/build/aframe-ar.js"> </script> 
 
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene embedded arjs='trackingMethod: best;'>
@@ -8,12 +8,12 @@
     </a-assets>
     <a-anchor hit-testing-enabled='true'>
       <a-entity rotation="90 0 0">
-          <a-marker-camera type="pattern" patternUrl="https://melanie-platz.github.io/AR-HIRO/pattern-marker.patt">
+          <a-marker type="pattern" url="https://melanie-platz.github.io/AR-HIRO/pattern-marker.patt">
         <a-sphere material='src: #earth;' position="0 0.5 0" radius="1" segments-height="53">
           <a-animation attribute="rotation" dur="7000" to="0 360 0" easing="linear" repeat="indefinite">
           </a-animation>
         </a-sphere>
-             </a-marker-camera>
+             </a-marker>
       </a-entity>
     </a-anchor>
     <a-camera-static/>
