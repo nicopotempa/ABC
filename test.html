@@ -2,10 +2,10 @@ src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"
 
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene embedded arjs='trackingMethod: best;'>
-<a-marker id="mymarker" preset="hiro">
     <a-assets>
       <img id='earth' src='https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/earth_atmos_4096.jpg' />
     </a-assets>
+    <a-marker id="mymarker" preset="hiro">
     <a-anchor hit-testing-enabled='true'>
       <a-entity rotation="90 0 0">
         <a-sphere material='src: #earth;' position="0 0.5 0" radius="1" segments-height="53">
