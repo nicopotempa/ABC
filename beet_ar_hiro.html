@@ -1,0 +1,25 @@
+      <!doctype HTML>
+      <html>
+        <head>
+          <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+          <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
+          <title>
+            AR.js for hiro Marker
+          </title>
+        </head>
+        <body style='margin : 0px; overflow: hidden;'>
+          <a-scene>
+              <a-marker id="mymarker" preset="hiro">
+      <!-- Comment for a-text: Kocham Cie -->
+      <a-text position="3.00 4.00 5.00" material="color: #b4af0c;opacity:0.8" rotation="0 0 0"  value="Kocham Cie" color="#b4af0c" height="0.80" ></a-text>
+         <!-- Comment for a-cylinder: Kocham Cie -->
+      <a-cylinder position="-1.00 1.70 0.00" material="color: #ffffff;opacity:0.7" rotation="0 0 0"  radius="0.80" height="0.80" ></a-cylinder>
+         <!-- Comment for a-text: Kocham Cie -->
+      <a-text position="0.00 0.50 1.50" material="color: #4545aa;opacity:0.5" rotation="0 0 0"  value="Kocham Cie" color="#4545aa" height="1.00" ></a-text>
+   
+              </a-marker>
+              <a-entity camera></a-entity>
+         </a-scene>
+        </body>
+      </html>
+    
